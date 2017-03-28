@@ -1,0 +1,16 @@
+<h1> All Users List </h1>
+
+<% @user.each do |f| %>
+<table>
+<tr>
+<td><%= f.id %></td>
+<td><%= f.username %></td>
+<td><%= link_to 'Show', f %></td>
+<td><%= link_to 'Edit', edit_user_path(f) %></td>
+</tr>
+
+
+
+</table>
+
+<% end %>
